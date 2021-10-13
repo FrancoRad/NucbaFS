@@ -16,10 +16,12 @@
         <img width="287" height="384" src="../Clase-01/foto.jpg" alt="Foto del programador">
         <h2>Datos personales</h2>
         <ul>
-            <li>Franco</li>
-            <li>Rad</li>
-            <li>25 años</li>
-            <li>franco.rad15@gmail.com</li>
+            <li class= "nombre">Franco</li>
+            <li class= "apellido">Rad</li>
+            <li class= "edad">25 años</li>
+            <li class= "correo">franco.rad15@gmail.com</li>
+            <li class= "linkedin"><a href="https://www.linkedin.com/in/franco-rad/" target="_blank">linkedin</a></li>
+            
         </ul>
         <h3>Breve descripción</h3>
     <!-- <div></div> Para hacer un llamado en css-->
@@ -40,11 +42,10 @@
         <input name="Nombre" type="text" placeholder="Franco Rad"><br>
 
         <b><label for="Edad">Edad</label></b>
-        <input name="Edad" type="number" placeholder="25">
-        <b><label for="Edad">años</label><br></b>
+        <input class="slot-edad" name="Edad" type="number" placeholder="25"><br>
 
-        <b><label for="fecha">Edad</label></b>
-        <input name="fecha" type="date"><br>
+        <b><label for="fecha">Fecha de nacimiento</label></b>
+        <input class="slot-fecha" name="fecha" type="date"><br>
         
         <b><label for="Email">E-mail</label></b>
         <input name="Email" type="email" placeholder="franco.rad15@gmail.com"required><br>
@@ -52,7 +53,7 @@
         <b><label for="Pass">Contraseña</label></b>
         <input name="Pass" type="password" required><br><br>
 
-        <input type="submit" value="Eviar">
+        <input class="boton_enviar" type="submit" value="Enviar">
     </form>
     
     <br>
