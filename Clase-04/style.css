@@ -1,0 +1,16 @@
+body{
+    background-color: aquamarine;
+}
+
+h1, h2, h3{
+    color: whitesmoke;
+    background-color: rgb(33, 68, 59);
+    text-align: center;
+}
+video{
+    text-align: center; 
+}
+div{
+    color: black;
+    background-color: white;
+}
