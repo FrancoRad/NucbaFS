@@ -1,0 +1,96 @@
+body{
+    animation-name: cuboColor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.font{
+    background-color: white;
+    border-radius: 30px;
+    width: 550px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-family: fantasy;
+    font-size: 50px;
+
+}
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cube {
+    position: relative;
+    width: 4em;
+    height: 4em;
+    margin: 2em auto;
+    font-size: 4em;
+    transform-style: preserve-3d;
+    transform-origin: 2em 2em 0;
+    animation-name: giroCubo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 3.5em;
+}
+.front {
+    background-color: lightblue;;
+    transform: rotateX(0deg) translateZ(2em);
+}
+
+.top {
+    background-color: mediumslateblue;
+    transform: rotateX(90deg) translateZ(2em);
+}
+
+.right {
+    background-color: maroon;;
+    transform: rotateY(90deg) translateZ(2em);
+}
+
+.left {
+    background-color: yellow;;
+    transform: rotateY(-90deg) translateZ(2em);
+}
+
+.bottom {
+    background-color: red;;
+    transform: rotateX(-90deg) translateZ(2em);
+}
+
+.back {
+    background-color: mediumspringgreen;
+    transform: rotateY(-180deg) translateZ(2em);
+}
+
+
+@keyframes giroCubo {
+    0%  {transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+    16.66% {transform: rotateX(90deg);}
+    33.33% {transform: rotateY(90deg);}
+    50% {transform: rotateY(270deg);}
+    66.66%{transform: rotateX(-90deg);}
+    83.33%{transform: rotateY(180deg);}
+    100%{transform: rotateX(0deg);}
+}
+
+@keyframes cuboColor {
+    16.66%      {background-color: red;}
+    33.33%  {background-color: yellow;}
+    50%  {background-color: maroon;}
+    66.66%  {background-color: mediumslateblue;}
+    83.33%  {background-color: mediumspringgreen;}
+    100%    {background-color: lightblue;}
+}
+

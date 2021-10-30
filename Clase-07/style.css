@@ -1,0 +1,62 @@
+* {
+    /* Me permite acomodar bien los grid*/
+    box-sizing: border-box;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+body{
+    background-image: linear-gradient(70deg, #193498, #113CFC, #1597E5, #69DADB);
+}
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+.header{
+   
+}
+.main{
+
+    background:  mistyrose;
+}
+.aside-1{
+    background: yellow;
+}
+.aside-2{
+    background: maroon;
+}
+.footer{
+    background: mediumaquamarine;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+    border: 1px solid red;
+}
+@media only screen and (min-width: 768px){
+    /* Para escritorio */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+@media all and (min-width: 800px){
+    .main       {flex:3.0px}
+    .aside-1    { order: 1;}
+    .main       { order: 2;}
+    .aside-2    { order: 3;}
+    .footer     { order: 4;}
+}
+.imagen-SantaFe{
+    background-image: url(./image/);
+}
